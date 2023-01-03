@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hcontainer {
+            background: url("img2.jpg");
+            background-color: rgba(0, 0, 0, 0.589);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+            height: 100vh;
+            color: white;
+        }
+
+        .logo {
+            padding: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: inline-block;
+            padding: 20px 10px;
+        }
+
+        .active {
+            color: rgb(226, 75, 20)
+        }
+
+        nav ul li a:hover {
+            color: rgb(34, 252, 34);
+        }
+
+
+        .home {
+            text-align: center;
+            margin-top: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .btn1 {
+            text-decoration: none;
+            color: white;
+            background-color: rgb(228, 61, 0);
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        .btn1:hover {
+            background: none;
+            border: 2px solid rgb(255, 83, 21);
+            color: rgb(255, 83, 21);
+        }
+
+        .btn2 {
+            text-decoration: none;
+            color: white;
+            background-color: green;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        .btn2:hover {
+            background: none;
+            border: 2px solid green;
+            color: green;
+        }
+
+        .booking,
+        .booktxt,
+        .bookform,
+        .features {
+            padding: 10px;
+        }
+
+        .bookform {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        footer {
+            height: 100%;
+            background-color: rgb(77, 75, 107);
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hcontainer">
+
+        <!-- head section starts here -->
+
+        <header style="display: flex;">
+            <div class="logo" style="flex: 50%">
+                <h1 style="margin:0;">BURGER <div style="color: rgb(228, 61, 0); display: inline;">KING</div> <span
+                        style="color: green;">.</span></h1>
+            </div>
+
+            <nav style="float: right;flex: 50%;">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Feature</a></li>
+                    <li><a href="#chef">Chef</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#booknow">Booking</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- home page content -->
+
+        <div class="home">
+            <h1 style="margin:10px;font-size: 50px;text-shadow: 2px 2px 30px black;">Best Quality <div
+                    style="color: rgb(228, 61, 0);display:inline;">Ingredients</div>
+            </h1>
+            <div style="font-size: 30px;text-shadow: 2px 2px 30px black;">Fastest <div
+                    style="color: green;margin-top:0px;display:inline;">Order</div> Delivery
+            </div>
+            <h3>Worlds Best Chef</h3>
+            <div style="margin: 10px 300px;font-size: 18px;font-weight: bolder;text-shadow: 2px 0 10px black;">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia rerum dignissimos, officia
+                    accusantium placeat quisquam delectus consequuntur tempora architecto.</p>
+            </div>
+
+            <div style="margin: 30px;">
+                <a href="#menu" class="btn1">View Menu</a>
+                <a href="#booknow" class="btn2">Book Table</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking" id="booknow" style="display:flex">
+        <div class="booktxt" style="flex:60%;font-family: Arial, Helvetica, sans-serif;">
+            <h3 style="color: green;">Book A Table</h3>
+            <h1 style="color: rgb(44, 38, 38);font-size: 40px;">Book Your Table For Private Dinners & Happy Hours</h1>
+            <hr>
+            <p style="font-weight: lighter;text-align:justify;font-size: 20px;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quas animi ab ea expedita impedit quaerat aperiam recusandae dignissimos, nostrum
+                maxime possimus, doloremque aut sit illo? Doloribus, dolores. Incidunt, dolor est!</p>
+            <p style="font-weight: lighter;text-align:justify;font-size: 20px;">Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Non tempore aut, quas, vel repudiandae eveniet autem veniam ullam sunt nam dolore
+                explicabo temporibus provident vero rem eaque. Incidunt, perferendis dolor.</p>
+        </div>
+        <div class="bookform" style="flex: 40%;">
+            <form action="#" style="background-color: rgb(14, 190, 14); width:500px;padding: 30px;margin-left:70px ;">
+                <input type="text" placeholder="Name"
+                    style="width:80%;margin:5px;padding:10px;border: none;border-radius: 5px;"><br>
+                <input type="email" placeholder="Email"
+                    style="width:80%;margin:5px;padding:10px;border: none;border-radius: 5px;"><br>
+                <input type="number" placeholder="Mobile"
+                    style="width:80%;margin:5px;padding:10px;border: none;border-radius: 5px;"><br>
+                <input type="text" placeholder="Date"
+                    style="width:80%;margin:5px;padding:10px;border: none;border-radius: 5px;"><br>
+                <input type="text" placeholder="Time"
+                    style="width:80%;margin:5px;padding:10px;border: none;border-radius: 5px;"><br>
+                <input type="text" placeholder="Guest"
+                    style="width:80%;margin:5px;padding:10px;border: none;border-radius: 5px;"><br>
+                <input type="submit" value="Book Now"
+                    style="width:40%;margin:5px;padding:10px;background-color: rgb(255, 83, 21);color: white; border: none;"><br>
+            </form>
+        </div>
+    </div>
+
+    <div id="features" style="text-align: center;">
+        <h2 style="color: green;">why choose us <span style="color:rgb(228, 86, 4);">?</span></h2>
+        <h1 style="font-size: 40px;color: rgb(44, 38, 38);">Our Key Features</h1>
+        <div style="display:flex;">
+            <div style="flex: 33.33%;padding:10px;">
+                <div>
+                    <h2>World’s best Chef</h2>
+                    <p style="padding: 30px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, repellat.
+                    </p>
+                </div>
+                <div>
+                    <h2>Natural ingredients</h2>
+                    <p style="padding: 30px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, repellat.
+                    </p>
+                </div>
+            </div>
+            <div style="flex: 33.33%;padding:10px;">
+                <div>
+                    <h2>Best quality products</h2>
+                    <p style="padding: 30px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, repellat.
+                    </p>
+                </div>
+                <div>
+                    <h2>Fresh vegetables & Meet</h2>
+                    <p style="padding: 30px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, repellat.
+                    </p>
+                </div>
+            </div>
+            <div style="flex: 33.33%;padding:10px;">
+                <div>
+                    <h2>Fastest door delivery</h2>
+                    <p style="padding: 30px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, repellat.
+                    </p>
+                </div>
+                <div>
+                    <h2>Ground beef & Low fat</h2>
+                    <p style="padding: 30px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, repellat.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex;background-color: rgb(228, 228, 228);">
+            <div style="flex: 33.33%;margin:30px;padding:20px;border-radius: 10px;background-color: white;">
+                <h2 style="color:rgb(29, 27, 27)">Burgers</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, temporibus!</p>
+                <a href="#" style="color: coral;">view menu</a>
+            </div>
+            <div style="flex: 33.33%;margin:30px;padding:20px;border-radius: 10px;background-color: white;">
+                <h2 style="color:rgb(29, 27, 27)">Snacks</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, temporibus!</p>
+                <a href="#" style="color: coral;">view menu</a>
+            </div>
+            <div style="flex: 33.33%;margin:30px;padding:20px;border-radius: 10px;background-color: white;">
+                <h2 style="color:rgb(29, 27, 27)">Beverages</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, temporibus!</p>
+                <a href="#" style="color: coral;">view menu</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="chef" id="chef" style="text-align: center;">
+        <h2 style="color: green;">Our Team</h2>
+        <h1 style="font-size: 40px;color: rgb(44, 38, 38);">Our Master Chefs</h1>
+        <hr>
+        <div style="display: flex;">
+            <div style="flex:25%;margin:15px;">
+                <img src="https://media.istockphoto.com/id/480329658/photo/cook-smiling-at-a-restaurant.jpg?s=1024x1024&w=is&k=20&c=_CDaYmk8vcdufBKOIZvy1sfgbwZaHR18SwAdRF8qYLI=" alt="fake img" height="200" width="300">
+                <p style="padding: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, assumenda!</p>
+            </div>
+            <div style="flex:25%;margin:15px;">
+                <img src="https://media.istockphoto.com/id/1394055791/photo/portrait-of-confident-black-female-chef-at-restaurant-kitchen-looking-at-camera.jpg?s=612x612&w=is&k=20&c=Y23dYPNIr4r24Nts73LBshMpDG2D_2LskFx4D2c4mTc=" alt="fake img" height="200" width="300">
+                <p style="padding: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, assumenda!</p>
+            </div>
+            <div style="flex:25%;margin:15px;">
+                <img src="https://media.istockphoto.com/id/1386844021/photo/standing-at-a-kitchen-counter-ready-to-start-work.jpg?s=612x612&w=is&k=20&c=iceRuF2nxgMKE7XIkweN9DLLFeH3rIw-XJJu6Qz1RCE=" alt="fake image" height="200" width="300">
+                <p style="padding: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, assumenda!</p>
+            </div>
+            <div style="flex:25%;margin:15px;">
+                <img src="https://media.istockphoto.com/id/1284253218/photo/portrait-of-barista-in-a-cafe.jpg?s=612x612&w=is&k=20&c=YevvR0osZJ2Lux_e-oOpREpc9FmSwK-YehXMTrEzFiY=" alt="fake image" height="200" width="300">
+                <p style="padding: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, assumenda!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <h2 style="color: green;text-align: center;">Food Menu</h2>
+        <h1 style="font-size: 40px;color: rgb(44, 38, 38);text-align: center;">Delicious Food Menu</h1>
+        <div>
+            <h2 style="text-align: center;color: rgb(192, 58, 10);">Burgers</h2>
+            <div style="display: flex;">
+                <div style="flex: 50%;text-align: center;">
+
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+
+
+                </div>
+                <img src="https://media.istockphoto.com/id/1254672762/photo/delicious-homemade-hamburger-and-french-fries.jpg?s=612x612&w=is&k=20&c=JGQrhOzrtoJXoToZXFldBEyHnprkgl0SnyQdSlzBXBs=" alt="burger"height="400" width="700">
+            </div>
+        </div>
+
+        <div>
+            <h2 style="text-align: center;color: rgb(192, 58, 10);">Snaks</h2>
+            <div style="display: flex;">
+                <div style="flex: 50%;text-align: center;">
+
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+
+
+                </div>
+                <img src="https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Snacks" height="400" width="700">
+            </div>
+        </div>
+
+        <div>
+            <h2 style="text-align: center;color: rgb(192, 58, 10);">Beverages</h2>
+            <div style="display: flex;">
+                <div style="flex: 50%;text-align: center;">
+
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+                    <h3>Mini cheese Burger-----------------$9.00</h3>
+
+
+                </div>
+                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=957&q=80" alt="Beverages" height="400" width="700">
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about">
+        <h1 style="font-size: 40px;color: rgb(44, 38, 38);text-align: center;">About</h1>
+        <hr>
+        <p style="padding: 30px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quis eveniet distinctio deserunt asperiores quam cum. Architecto similique quam necessitatibus praesentium possimus voluptas, at ex vero, laboriosam placeat, nesciunt magni animi nobis enim eius provident consectetur repellendus consequuntur? Architecto doloremque asperiores rerum expedita? Laboriosam maiores velit quos eveniet ullam alias, provident cum aliquam earum accusamus dicta. Beatae explicabo quidem dolor tenetur, mollitia, voluptatem accusantium et nesciunt a excepturi deleniti laborum corporis hic id aperiam repellendus. Debitis, non. Numquam praesentium quis voluptates accusamus laudantium pariatur dolorem temporibus, quae amet exercitationem a ad sit et alias ipsa tempora maxime! Pariatur, vitae molestias!
+        </p>
+    </div>
+
+    <footer id="contact" style="background-color: rgba(49, 43, 43, 0.822);">Copyright Burger King &copy 2022 All rights reserved
+        <h2 style="margin: 10px;">contact</h2>
+        <p style="margin: 0;">
+            123 Street, New York, USA <br>
+            +012 345 67890 <br> 
+            info@example.com
+        </p>
+    </footer>
+</body>
+
+</html>
